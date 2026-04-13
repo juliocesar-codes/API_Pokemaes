@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitFactory {
 
-    private val baseUrl = "https://pokeapi.co/api/v2/pokemon/"
+    private val baseUrl = "https://pokeapi.co/api/v2/"
 
     private val retrofitFactory = Retrofit
         .Builder()
@@ -17,4 +17,6 @@ class RetrofitFactory {
         return retrofitFactory
             .create(PokemonService::class.java)
     }
+
+
 }
