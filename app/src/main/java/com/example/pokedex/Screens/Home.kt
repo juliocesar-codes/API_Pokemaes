@@ -43,7 +43,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 @Composable
-fun TelaInicial(modifier: Modifier = Modifier) {
+fun Home(modifier: Modifier = Modifier) {
 
     var pokemonState by remember {
         mutableStateOf("")
@@ -74,7 +74,7 @@ fun TelaInicial(modifier: Modifier = Modifier) {
         modifier = Modifier.fillMaxSize()
     ) {
         Row(
-            Modifier
+            modifier = modifier
                 .background(Color(207, 38, 44, 255))
                 .padding(15.dp)
                 .fillMaxWidth(),

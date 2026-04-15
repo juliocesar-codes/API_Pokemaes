@@ -16,11 +16,20 @@ data class PokemonDetail(
     val abilities: List<AbilitySlot>,
     val weight: Int,
     val height: Int,
-    val stats: List<StatSlot>
+    val stats: List<StatSlot>,
+    val types: List<TypesSlot>
 )
 
 data class Sprites(
     val front_default: String
+)
+
+data class TypesSlot(
+    val type: Type
+)
+
+data class Type(
+    val name: String
 )
 
 data class AbilitySlot(
